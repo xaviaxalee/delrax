@@ -1,0 +1,485 @@
+ 
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8" />
+    <title > Delrax</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+    <link href="assets/plugins/parsley/css/parsley.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/style_ico.css" rel="stylesheet" />
+    <link href="assets/css/style-responsive.min.css" rel="stylesheet" />
+    <link href="assets/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <link href="assets/css/theme/default.css" id="theme" rel="stylesheet" />
+    <link href="assets/css/flipclock.css" rel="stylesheet" />
+    <link href="assets/css/ico.css" rel="stylesheet" />
+
+
+    <link href="assets/css/ico.css" rel="stylesheet" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+    <!--
+    To collect end-user usage analytics about your application,
+    insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag,
+    and before any other scripts. Your first data will appear
+    automatically in just a few seconds.
+    -->
+    <!-- ================== BEGIN PAGE CSS STYLE ================== -->
+
+    <!-- ================== END PAGE CSS STYLE ================== -->
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (a) {
+            function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c
+        }({
+            instrumentationKey: "ce51aea7-c5ca-4620-8b70-87920575c4e4"
+        });
+
+        window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+    </script>
+</head>
+<body data-spy="scroll" data-target="#header-navbar" data-offset="51">
+    <!-- begin #page-container -->
+    <div id="page-container" class="fade">
+        <!-- begin #header -->
+        <div id="header" class="header navbar navbar-transparent navbar-fixed-top">
+            <!-- begin container -->
+            <div class="container">
+                <!-- begin navbar-header -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#home" data-click="scroll-to-target" class="navbar-brand">
+                        <span class="brand-logo">
+                            <img src="assets/images/Delrax-logo-small.png" width="50" alt="Home" />
+                        </span>
+                        <span class="brand-text">
+                            <span class="text-theme"></span>
+                        </span>
+                    </a>
+                </div>
+                <!-- end navbar-header -->
+                <!-- begin navbar-collapse -->
+                <div class="collapse navbar-collapse" id="header-navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#home" data-click="scroll-to-target">HOME</a></li>
+                        <li><a href="#about" data-click="scroll-to-target">ABOUT</a></li>
+                        <li><a href="#roadmap" data-click="scroll-to-target">ROADMAP</a></li>
+                        <li><a href="#ico" data-click="scroll-to-target">ICO</a></li>
+                        <li><a href="#team" data-click="scroll-to-target">TEAM</a></li>
+                        <li><a href="docs/Delrax_whitepapper.pdf" target="blank">WHITEPAPER</a></li>
+                        <li><a href="login.html" class="position-relative"> SIGN UP</a></li>
+                        <li><a href="login.html" class="position-relative">LOGIN</a></li>
+                       
+                        <li />
+                                </ul>
+                </div>
+                <!-- end navbar-collapse -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end #header -->
+        <!-- begin #home -->
+        <div id="home" class="content has-bg home">
+            <!-- begin content-bg -->
+            <div class="content-bg">
+                <img src="assets/images/home-bg.jpg" alt="Home" />
+            </div>
+            <!-- end content-bg -->
+            <!-- begin container -->
+            <div class="container home-content">
+               <h1>Delrax </h1>
+                <h3>A Blockchain Driven Online Cinema</h3>
+                   <div class="hide-when-small">
+                   <!--    <h5>ICO Launching in</h5>
+                    
+                  <div class="wrapper">
+                        <div class="clock animated flipInX"></div>
+                    </div>  -->
+                    <canvas id="confetti"></canvas>
+</div>          <a  href="Presale.html" target="blank1" class="btn btn-theme"> Sign up </a>
+                <a href="docs/Delrax_whitepapper.pdf" target="blank2" class="btn btn-theme"> Whitepapper </a>
+                                <!-- end container -->
+            </div>
+        </div>
+        <!-- end #home -->
+        <!-- begin #about -->
+        <div id="about" class="content has-bg" data-scrollview="true">
+            <!-- begin content-bg -->
+            <div class="content-bg">
+            
+            </div>
+            <!-- end content-bg -->
+            <!-- begin container -->
+            <div class="container" data-animation="true" data-animation-type="fadeInDown">
+                <h2 class="content-title">About Delrax Platform</h2>
+                <div class="content-desc col-md-12 col-sm-12">
+                  Delrax is a platform that is built with the features of an E-Cinema where users can stream live movies from cinemas with their phones or computers with no data charges.
+                </div>
+                <!-- begin row -->
+                <div class="row">
+                    <!-- begin col-4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <!-- begin about -->
+                        <div class="about"> <h3 class="center">Zero Data Streaming</h3>
+                            <p> "Data Free streaming of video" means You won’t be charged for the data you used watching the movie over the phone company network. So If you have enough data to get you connected to the site and just enough DRXT for the movie the you can stream live at any time.
+                           </p>
+                        </div>
+                        <!-- end about -->
+                    </div>
+                    <!-- end col-4 -->
+                    <!-- begin col-4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <h3 class="center">Blockchain Driven</h3>
+                        <p>
+                          We are using our blockchain technology as the back bone of our project. We will use it to protect users data, speed up transactions, securing the movies data base to avoid piracy and to have a perfect on-click streaming system. That is, immediately tokens have been paid in less than five seconds the movie will display.  
+                        </p>
+
+                    </div>
+                    <!-- end col-4 -->
+                    <!-- begin col-4 -->
+                    <div class="col-md-4 col-sm-6">
+                        <h3 class="center">Easy Accessibility</h3>
+                        <p>
+                         The plathform is created with easy access and navigate With features like on-click streaming system quick confirmation of payment very easy access to list of movies.
+                        </p>
+                    </div>
+                    <!-- end col-4 -->
+                    
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+            <!-- end container -->
+        </div>
+        <!-- end #about -->
+        <!-- begin #quote -->
+        <div id="quote" class="content bg-black-darker has-bg custom-Delrax-quote" data-scrollview="true">
+            <!-- begin content-bg -->
+            <div class="content-bg">
+                <img src="assets/images/strategy-bg.jpg" alt="Client" />
+            </div>
+            <!-- end content-bg -->
+            <!-- begin container -->
+            <div class="container" data-animation="true" data-animation-type="fadeInUp">
+                <!-- begin item -->
+                <div class="item active">
+
+                </div>
+                <!-- end item -->
+            </div>
+            <!-- end containter -->
+        </div>
+        <!-- end #quote -->
+
+        <!-- begin #roadmap -->
+        <div id="roadmap" class="content" data-scrollview="true">
+            <!-- begin container -->
+            <div class="container" data-animation="true" data-animation-type="fadeInDown">
+                               <p id="roadmap-wrapper">
+                    <img src="assets/images/roadmap.png" />
+                </p>
+
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end #roadmap -->
+        <!-- begin #client -->
+        <div id="client" class="content has-bg bg-green" data-scrollview="true">
+            <!-- begin content-bg -->
+            <div class="content-bg">
+                <img src="assets/images/strategy-bg.jpg" alt="Client" />
+            </div>
+            <!-- end content-bg -->
+            <!-- begin container -->
+            <div class="container" data-animation="true" data-animation-type="fadeInUp">
+
+            </div>
+            <!-- end containter -->
+        </div>
+        <!-- end #client -->
+        <!-- begin #ICO -->
+    
+        <div id="ico" class="content" data-scrollview="true" data-animation-type="fadeInDown">
+            <!-- begin container -->
+            <div class="container">
+                <h2 class="content-title">Token Sale</h2>
+                <p class="content-desc">
+                    The DRXT token begins in the 3rd quarter of 2018, with a 10% referral bonus. The ICO date will be published here. Do not forget to join us on <a href="https://t.me/delrax"><strong> telegram</strong> </a>for more info.
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 token-sale center">
+                        <img src="assets/images/token-sale.png" />
+                        <br />
+                        <br />
+                    </div>
+                    <div class="col-md-6 col-sm-6"  style="height: 280px">
+                        <canvas id="ico-coins" alt="Delrax token distribution" height="300px"></canvas>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+                <!-- end container -->
+
+            </div>
+                    
+            </div>
+        </div>
+
+        <div id="team" class="content" data-scrollview="true" data-animation-type="fadeInDown">
+            <!-- begin container -->
+            <div class="container">
+                <h2 class="content-title">Our Team</h2>
+                <p class="content-desc">
+                    Just as decentralization is a key aspect of cryptocurrencies, it is a main component of our company as well. we are all proud to have a hand in creating the Delrax platform.
+                </p>
+                <!-- begin row -->
+                <div class="row">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/dave.png" alt="Artak Hamazaspyan" />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">David</br>Effanga</h3>
+                                <div class="title text-theme">Co-Founder | CEO </div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/praiz.png" alt="Mittal Patel" />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Samuel</br>Victor</h3>
+                                <div class="title text-theme">Co-Founder | CEO </div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                    </div>
+                <!-- end row -->
+                <!-- begin row -->
+                <div class="row">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/gloria.png" alt="Stephen Silver " />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Zaramell</br>Favour </h3>
+                                <div class="title text-theme">Expert Trader</div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                     <!-- begin row -->
+                <div class="row">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/domin.png" alt="Stephen Silver " />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Joe </br>Dominion</h3>
+                                <div class="title text-theme">Graphic Designer</div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+                 <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/team-marcus.png" alt="Marcus McCurdy" class="px128x128" />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Kyran</br>Jia</h3>
+                                <div class="title text-theme">Customer Support</div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/cleo.png" alt="Gayane West" class="px128x128" />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Cleo</br>Ekeng</h3>
+                                <div class="title text-theme">Financial Specialist</div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                    <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/josh.png" alt="Juan Carlos Girbés" />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Josh</br>Joseph </h3>
+                                <div class="title text-theme">Community Manager</div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                   </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                       <!-- begin team -->
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/wiz.png" alt="Gayane West" class="px128x128" />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Wisdom</br>Edoki</h3>
+                                <div class="title text-theme">ICO Advisor </div>
+                            </div>
+                        </div>
+                        <!-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+                <!-- begin row -->
+                <div class="row">
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team --
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/team-elina.png" alt="Elina Sahakyan" />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Elina</br>Sahakyan</h3>
+                                <div class="title text-theme">Strategic Marketing Specialist</div>
+                            </div>
+                        </div>
+                        !-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                    <!-- begin col-3 -->
+                    <div class="col-md-3 col-sm-3">
+                        <!-- begin team --
+                        <div class="team">
+                            <div class="image" data-animation="true" data-animation-type="flipInX">
+                                <img src="assets/images/team-rose.png" alt="Rose Abrahamyan " />
+                            </div>
+                            <div class="info">
+                                <h3 class="name">Rose</br>Abrahamyan </h3>
+                                <div class="title text-theme">Strategic Marketing Specialist</div>
+                            </div>
+                        </div>
+                        !-- end team -->
+                    </div>
+                    <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+            </div>
+        </div>
+        <!-- end #team -->
+        <!-- begin #footer -->
+        <div id="footer" class="footer">
+            <div class="container">
+                <div class="footer-brand">
+                    <div class="footer-brand-logo"></div>
+                    Delrax
+                </div>
+                <p>
+                    &copy; Copyright 2018 Delrax <br />
+                    Be sure to follow us!
+                </p>
+                <p class="social-list">
+                    <a href="https://twitter.com/DelraxDrxt"  target="blacktwitter"><i class="fa fa-twitter fa-fw"></i></a>
+                    <a href="https://t.me/delrax" target="blackslack"><i class="fa fa-telegram fa-fw"></i></a>
+                    <a href="https://www.facebook.com/Delrax-362631207478276/" target="blackfacebook"><i class="fa fa-facebook fa-fw"></i></a>
+                    <a href="https://medium.com/Delrax-exchange" target="blackmedium"><i class='fa fa-medium fa-fw'></i></a>
+                </p>
+            </div>
+        </div>
+        <!-- end #footer -->
+    </div>
+
+    
+   
+
+<!-- end #page-container -->
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+    <script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/chart/Chart.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="/assets/crossbrowserjs/html5shiv.js"></script>
+        <script src="/assets/crossbrowserjs/respond.min.js"></script>
+        <script src="/assets/crossbrowserjs/excanvas.min.js"></script>
+    <![endif]-->
+    <script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+    <script src="assets/plugins/gritter/js/jquery.gritter.js"></script>
+    <script src="assets/plugins/parsley/js/parsley.js"></script>
+    <script src="assets/plugins/scrollMonitor/scrollMonitor.js"></script>
+    <script src="assets/plugins/bootstrap-sweetalert/sweetalert.min.js"></script>
+
+    <script src="js/Custom/countdown-lib.js"></script>
+    <script src="js/Custom/countdown.js"></script>
+
+    <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="js/Custom/countdown.js"></script>
+     <script src="js/Custom/Airdrop.js"></script>
+    <script src="js/apps.js"></script>
+    <script src="js/Custom/NotIcoPage.js"></script>
+
+    <!-- ================== END BASE JS ================== -->
+
+    <script>
+        $(document).ready(function () {
+            App.init();
+/**/
+        });
+    </script>
+</body>
+                                                           <!-- Floating Button -->
+</div><div id="gritter-notice-wrapper" class="bottom-right"><div id="gritter-item-1" class="gritter-item-wrapper" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="http://localhost/Delrax.com/#" tabindex="1" style="display: none;">Close Notification</a><div class="gritter-without-image"><span class="gritter-title"><span class="success-title" style="color: #e5603b;font-weight: bold;"><a href="login.html"> JOIN OUR AIRDROP! </a></span></span><p><span style="color: #e5603b;">Delrax is giving out free 50 tokens worth 10$ as airdrop to every Registered member and another 50 token for each Referral . All you have to do is click on sign up and share your Referral  link.</span></p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div></body><script src="https://az416426.vo.msecnd.net/scripts/a/ai.0.js"></script>
+
+<!--
+</div><div id="gritter-notice-wrapper" class="top-right"><div id="gritter-item-1" class="gritter-item-wrapper" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="http://localhost/Delrax.com/#" tabindex="1" style="display: none;">Close Notification</a><div class="gritter-without-image"><span class="gritter-title"><span class="success-title" style="color: #8B008B;font-weight: bold;"> Todays Bounty </span></span><p><span style="color: #ffffff;">Delrax is giving out free 50 tokens worth 10$ as airdrop to every Registered member and another 50 token for each Referral . All you have to do is click on sign up and share your Referral  link.</span></p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div></body><script src="https://az416426.vo.msecnd.net/scripts/a/ai.0.js"></script>
+-->
+
+</html>
